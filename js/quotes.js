@@ -1,7 +1,7 @@
 // // Array containing quotes
 
 
-const quotes = [{
+let quotes = [{
         quote: "Start by doing what's necessary; then do what's possible; and suddenly you are d" +
             "oing the impossible.",
 

@@ -40,8 +40,9 @@ function getRandomQuote() {
 // Function to generate random colors 
 
 function randomColors(red, green, blue) {
-    let randomColor;
-
+    let randomRgb = Math.floor(Math.random() * 256);
+    let randomColor = `rgb(${randomRgb},${randomRgb},${randomRgb})`;
+    return randomColor;
 }
 
 

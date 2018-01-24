@@ -35,15 +35,37 @@ function getRandomQuote() {
 }
 
 
-
-
-// Function to generate random colors 
-
-function randomColors(red, green, blue) {
-    let randomRgb = Math.floor(Math.random() * 256);
-    let randomColor = `rgb(${randomRgb},${randomRgb},${randomRgb})`;
+// Function to genereate random rgb color value
+function randomColorGenerator() {
+    let randomColor;
+    red = Math.floor(Math.random() * 256);
+    green = Math.floor(Math.random() * 256);
+    blue = Math.floor(Math.random() * 256);
+    randomColor = `rgb(${red},${green},${blue})`;
     return randomColor;
 }
+
+
+
+// function randomRGB() {
+//     return Math.floor(Math.random() * 256);
+// }
+
+// function randomColor() {
+//     let color = `rgb( ${randomRGB}, ${randomRGB}, ${randomRGB})`;
+//     return color;
+// }
+
+// function randomRgb() {
+//     return Math.floor(Math.random() * 256);
+// }
+// // Function to generate random colors 
+
+// function randomColors(red, green, blue) {
+//     let randomColor;
+//     randomColor = `rgb(${randomRgb},${randomRgb},${randomRgb})`;
+//     return randomColor;
+// }
 
 
 // function to print quote to the screen
@@ -61,5 +83,8 @@ function printQuote() {
 
     print(message);
 
-
+    // TO Generate Random Colors
+    randomColorGenerator();
+    // Update background with new random color
+    document.getElementById("bgcolor").style.backgroundColor = randomColorGenerator();
 }

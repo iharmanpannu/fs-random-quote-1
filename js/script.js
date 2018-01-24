@@ -36,7 +36,7 @@ function getRandomQuote() {
 
 
 // This functions creates random background color
-function randomColorGenerator() {
+function randomColors() {
     let randomColor;
     red = Math.floor(Math.random() * 256);
     green = Math.floor(Math.random() * 256);
@@ -44,19 +44,6 @@ function randomColorGenerator() {
     randomColor = `rgb(${red},${green},${blue})`;
     return randomColor;
 }
-
-
-
-// function randomRgb() {
-//     return Math.floor(Math.random() * 256);
-// }
-
-// function randomColorGenerator() {
-//     randomRgb();
-//     let randomColor;
-//     randomColor = `rgb( ${randomRgb}, ${randomRgb}, ${randomRgb})`;
-//     return randomColor;
-// }
 
 
 // function to print quote to the screen
@@ -74,8 +61,8 @@ function printQuote() {
 
     print(message);
 
-    // TO Generate Random Colors
-    randomColorGenerator();
-    // Update background with new random color
-    document.getElementById("bgcolor").style.backgroundColor = randomColorGenerator();
+    // To Generate Random Colors
+    randomColors();
+    // Change background color when quote change
+    document.getElementById("bgcolor").style.backgroundColor = randomColors();
 }

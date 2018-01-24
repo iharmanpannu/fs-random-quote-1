@@ -17,13 +17,9 @@ function print(quote) {
     outputDiv.innerHTML = quote;
 }
 
-
-// ES6 function to get a random quote splice it and save it to var random quote 
 function getRandomQuote() {
-    // This variable create a random quotes.
     const randomQuote = Math.floor(Math.random() * quotes.length);
 
-    // This var check if random quote is already shown to user or not.
     const splicedQuote = quotes.splice(randomQuote, 1)[0];
     viewedQuotes.push(splicedQuote);
     if (quotes.length === 0) {
@@ -32,6 +28,21 @@ function getRandomQuote() {
     }
     return splicedQuote;
 }
+
+// // ES6 function to get a random quote splice it and save it to var random quote 
+// function getRandomQuote() {
+//     // This variable create a random quotes.
+//     const randomQuote = Math.floor(Math.random() * quotes.length);
+
+//     // This var check if random quote is already shown to user or not.
+//     const splicedQuote = quotes.splice(randomQuote, 1)[0];
+//     viewedQuotes.push(splicedQuote);
+//     if (quotes.length === 0) {
+//         quotes = viewedQuotes;
+//         viewedQuotes = [];
+//     }
+//     return splicedQuote;
+// }
 
 
 // ES6 function to print quote to the screen

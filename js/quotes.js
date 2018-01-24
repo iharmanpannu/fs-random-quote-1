@@ -130,34 +130,3 @@ const quotes = [{
 //     "#77B1A9",
 //     "#73A857"
 // ];
-
-
-// // Load random quote when browser loads
-// window.onload = randomQuote;
-
-// var button = document.getElementById("loadQuote"),
-//     quote = document.getElementById("quote"),
-//     
-// source = document.getElementById('
-//         citation: "",
-//         source '),
-//         citation: "",
-//     random;
-
-// // event listener to respond to "Show another quote" button clicks when user
-// // clicks anywhere on the button, the "printQuote" function is called
-// button.addEventListener("click", randomQuote, false);
-
-// function randomQuote() {
-//     // This create a random number to pick random quote
-//     random = Math.floor(Math.random() * quotes.length);
-//     // This gets the random quote
-//     quote.innerHTML = quotes[random].quote;
-//     // This gets the name of the 
-// source citation: "",
-// //     
-// source.innerHTML = '&mdash;' +
-// citation: "",
-// quotes[random].source; citation: "",
-
-// }

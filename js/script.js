@@ -35,7 +35,7 @@ function getRandomQuote() {
 }
 
 
-// Function to genereate random rgb color value
+// This functions creates random background color
 function randomColorGenerator() {
     let randomColor;
     red = Math.floor(Math.random() * 256);
@@ -47,23 +47,14 @@ function randomColorGenerator() {
 
 
 
-// function randomRGB() {
-//     return Math.floor(Math.random() * 256);
-// }
-
-// function randomColor() {
-//     let color = `rgb( ${randomRGB}, ${randomRGB}, ${randomRGB})`;
-//     return color;
-// }
-
 // function randomRgb() {
 //     return Math.floor(Math.random() * 256);
 // }
-// // Function to generate random colors 
 
-// function randomColors(red, green, blue) {
+// function randomColorGenerator() {
+//     randomRgb();
 //     let randomColor;
-//     randomColor = `rgb(${randomRgb},${randomRgb},${randomRgb})`;
+//     randomColor = `rgb( ${randomRgb}, ${randomRgb}, ${randomRgb})`;
 //     return randomColor;
 // }
 

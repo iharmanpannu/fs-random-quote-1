@@ -1,4 +1,4 @@
-setInterval(printQuote, 10000);
+setInterval(printQuote, 20000);
 window.onload = printQuote;
 
 // event listener to respond to "Show another quote" button clicks
@@ -6,9 +6,6 @@ window.onload = printQuote;
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 let message = '';
-// let red;
-// let blue;
-// let green;
 let viewedQuotes = [];
 
 

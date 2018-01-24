@@ -41,10 +41,11 @@ function printQuote() {
     message = `<p class="quote">${quotes.quote}</p>`; //Prints quotes
     message += `<p class="source">${quotes.source}</p>`; //Prints source
     //Checks if citation is available if yes then prints it else empty string.
-    quotes.citation ? (message += `<p class="citation">${quotes.citation}</p>`) : (message += "");\
+    quotes.citation ? (message += `<p class="citation">${quotes.citation}</p>`) : (message += "");
     //Checks if year is available if yes then prints it else empty string.
     quotes.year ? (message += `<p class="year">${quotes.year}</p>`) : (message += "");
-    quotes.tag ? (message += `<h3 class="tag">${quotes.tag}</h3>`) : (message += ""); //Checks if year is available if yes then prints it else empty string.
+    //Checks if year is available if yes then prints it else empty string.
+    quotes.tag ? (message += `<h3 class="tag">${quotes.tag}</h3>`) : (message += "");
 
     print(message);
 }
